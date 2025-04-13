@@ -10,17 +10,38 @@
       width: 100px;
       height: 100px;
       background: red;
-      transition: width 3s;
+      transition: width 2s;
     }
-    
+
+    #div1 {transition-timing-function: linear;}
+    #div2 {transition-timing-function: ease;}
+    #div3 {transition-timing-function: ease-in;}
+    #div4 {transition-timing-function: ease-out;}
+    #div5 {transition-timing-function: ease-in-out;}
+   
     div:hover {
-      width: 100vw;
+      width: 300px;
     }
     </style>
 </head>
 <body>
   <h1>Hello, world!</h1>
   <p>This is my very first website. I'm learning how to code!</p>
+  <h1>The transition Property</h1>
+  <p>Hover over the div element below, to see the transition effect:</p>
+    <div>
+      <p>I am a red box</p>
+    </div>
+  
+    <h1>The transition-timing-function Property</h1>
+
+    <p>Hover over the div elements below, to see the different speed curves:</p>
+    
+    <div id="div1">linear</div><br>
+    <div id="div2">ease</div><br>
+    <div id="div3">ease-in</div><br>
+    <div id="div4">ease-out</div><br>
+    <div id="div5">ease-in-out</div><br>
   <script src="script.js"></script>
 </body>
 </html>
